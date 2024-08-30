@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rock Paper Scissors</title>
+        <link rel="stylesheet" href="./styles/PageStyle.css"/>
+
+    </head>
+
+    <body>
+        <p>Rock Paper Scissors</p>
+        <button onclick="generateComputerMove('Rock');" class="moveBtn">
+            <img src="./images/RockFinal.png" class="moveIcon">
+        </button>
+        <button onclick="generateComputerMove('Paper');" class="moveBtn">
+            <img src="./images/PaperFinal.png" class="moveIcon">
+        </button>
+        <button onclick="generateComputerMove('Scissors');" class="moveBtn">
+            <img src="./images/ScissorsFinal.png" class="moveIcon">
+        </button>
+        
+
+        <p class="jsResult result"></p>
+        <p class="jsMoves"></p>
+        <p class="jsScore score"></p>
+        <button onclick="resetScore();" class="resetBtn">Reset Score</button>
+
+        <script src="./scripts/GameLogic.js" async></script>
+    </body>
+</html>
